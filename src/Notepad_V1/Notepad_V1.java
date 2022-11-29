@@ -12,12 +12,15 @@ import javax.swing.JOptionPane;
  *
  * @author mike
  */
-public class Notepad_V1 extends javax.swing.JFrame {
+public class Notepad_V1 extends javax.swing.JFrame 
+        
+{
 
     /**
      * Creates new form Notepad_V1
      */
-    public Notepad_V1() {
+    public Notepad_V1()
+    {
         initComponents();
     }
 
@@ -135,12 +138,17 @@ public class Notepad_V1 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        try {
+        
+        try
+            
+        {
             // TODO add your handling code here:
             //JOptionPane.showMessageDialog();
             Thread.sleep(1000);
-            JOptionPane.showMessageDialog(null, "Note saved into wallet");
-        } catch (InterruptedException ex) {
+            JOptionPane.showMessageDialog(null, "Note saved into wallet.");
+        } catch (InterruptedException ex)
+            
+        {
             Logger.getLogger(Notepad_V1.class.getName()).log(Level.SEVERE, null, ex);
         }
         
@@ -179,6 +187,7 @@ public class Notepad_V1 extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(Notepad_V1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        
         //</editor-fold>
 
         /* Create and display the form */
@@ -186,6 +195,7 @@ public class Notepad_V1 extends javax.swing.JFrame {
             public void run() {
                 new Notepad_V1().setVisible(true);
             }
+        //    
         });
     }
 
